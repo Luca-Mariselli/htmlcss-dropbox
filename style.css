@@ -4,6 +4,17 @@
   padding: 0;
 }
 
+html {
+  font-family: sans-serif;
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 99;
+}
+
 .margin-left {
   margin-left: 2rem;
 }
@@ -14,6 +25,18 @@
 
 .margin-top6 {
   margin-top: 6rem;
+}
+
+.margin-bot2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bot6 {
+  margin-bottom: 6rem;
+}
+
+.padding {
+  padding: 1rem;
 }
 
 .padding-top {
@@ -32,8 +55,58 @@
   padding-bottom: 4rem;
 }
 
+.padding-left {
+  padding-left: 1rem;
+}
+
 .align-right {
   justify-content: flex-end;
+}
+
+.align-chevron {
+  margin-left: 30rem;
+}
+
+.hr-short {
+  margin: 1rem;
+  width: 20%;
+}
+
+.button1 {
+  background-color: #0061ff;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+}
+
+.button2 {
+  background-color: #0061ff;
+  padding: 1rem;
+  color: white;
+  border: none;
+  width: 60%;
+  font-size: 14px;
+}
+
+.button3 {
+  background-color: #0061ff;
+  padding: 0.7rem 2rem;
+  color: white;
+  border: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.button4 {
+  background-color: #0061ff;
+  padding: 0.7rem 1rem;
+  color: white;
+  border: none;
+  margin-bottom: 2rem;
+  width: 30%;
+  top: 3rem;
+  right: 1rem;
+  position: absolute;
 }
 
 .reverse {
@@ -73,6 +146,10 @@ header {
   min-height: 80px;
 }
 
+.relative {
+  position: relative;
+}
+
 .f-nav {
   display: flex;
   align-content: space-between;
@@ -83,11 +160,6 @@ header {
   height: 40px;
   display: flex;
   align-items: center;
-}
-
-.logo {
-  height: 40px;
-  width: 100px;
 }
 
 .frontpage {
@@ -111,7 +183,11 @@ header {
 
 .front-r {
   width: 70%;
-  background-color: crimson;
+}
+
+.jumbo {
+  width: 110%;
+  position: absolute;
 }
 
 .radio {
@@ -124,19 +200,30 @@ header {
   flex-direction: row;
   min-height: 500px;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .column-sub {
   width: 30%;
   display: flex;
   flex-direction: column;
-  border: 2px gray solid;
+  border: 2px #aebcc5 solid;
+  justify-content: start;
 }
 
 .first-row {
-  border-bottom: gray solid 2px;
+  border-bottom: #aebcc5 solid 2px;
   text-align: center;
   padding: 0.5rem;
+}
+
+.casella1 {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.mese {
+  color: #aebcc5;
 }
 
 .f-single {
@@ -144,7 +231,7 @@ header {
   flex-direction: row;
   min-height: 200px;
   justify-content: space-between;
-  border: 2px gray solid;
+  border: #aebcc5 solid 2px;
 }
 
 .column-single {
@@ -157,8 +244,11 @@ header {
   min-height: 400px;
 }
 .pic {
-  background-color: crimson;
   width: 60%;
+}
+
+.img-partner {
+  width: 100%;
 }
 
 .scritte {
@@ -174,6 +264,12 @@ header {
   justify-content: space-between;
 }
 
+.column-triple {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
 .square {
   display: flex;
   flex-wrap: wrap;
@@ -231,4 +327,10 @@ footer {
 
 .f-item {
   width: 16%;
+  display: flex;
+  flex-direction: column;
+}
+
+.l-height {
+  line-height: 2rem;
 }
