@@ -140,6 +140,9 @@ button:active {
   padding: 0.5rem 1rem;
   border: none;
 }
+.button1:hover {
+  background-color: rgba(0, 97, 255, 0.9);
+}
 
 .button2 {
   background-color: #0061ff;
@@ -148,6 +151,9 @@ button:active {
   width: 60%;
   font-size: 14px;
 }
+.button2:hover {
+  background-color: rgba(0, 97, 255, 0.9);
+}
 
 .button3 {
   background-color: #0061ff;
@@ -155,6 +161,9 @@ button:active {
   border: none;
   margin-bottom: 2rem;
   width: 100%;
+}
+.button3:hover {
+  background-color: rgba(0, 97, 255, 0.9);
 }
 
 .button4 {
@@ -167,16 +176,25 @@ button:active {
   right: 1rem;
   position: absolute;
 }
+.button4:hover {
+  background-color: rgba(0, 97, 255, 0.9);
+}
 
 .button5 {
   border: 1px black solid;
   padding: 0.5rem 1rem;
+}
+.button5:hover {
+  font-weight: 600;
 }
 
 .button6 {
   background-color: white;
   padding: 0.7rem 3rem;
   border: none;
+}
+.button6:hover {
+  border: 1px black solid;
 }
 
 /*************************** header ***************************/
@@ -242,13 +260,13 @@ header {
   color: black;
 }
 
-/* radio */
+/*************** radio ***************/
 .radio {
   margin: 1rem 1rem 1rem 0;
   display: inline-block;
 }
 
-/* flex triplo verticale */
+/*************** flex triplo verticale ***************/
 .f-triple {
   display: flex;
   flex-direction: row;
@@ -290,7 +308,7 @@ header {
   width: 20%;
 }
 
-/* box large */
+/*************** box large ***************/
 .f-single {
   display: flex;
   flex-direction: row;
@@ -303,7 +321,7 @@ header {
   width: 100%;
 }
 
-/* partner */
+/*************** partner ***************/
 .f-display {
   display: flex;
   margin-top: 2rem;
@@ -322,7 +340,7 @@ header {
   padding: 2rem;
 }
 
-/* flex 6 colonne */
+/*************** flex 6 colonne ***************/
 .column-triple {
   width: 30%;
   display: flex;
@@ -330,7 +348,7 @@ header {
   justify-content: start;
 }
 
-/* quadrati */
+/*************** quadrati ***************/
 .quadrati {
   min-height: 628px;
   background-color: #f5f5f5;
@@ -370,7 +388,7 @@ header {
   filter: invert(1);
 }
 
-/* Background e animazioni quadrati */
+/*************** Background e animazioni quadrati ***************/
 .verde {
   background-color: #a2d39b;
 }
@@ -451,7 +469,7 @@ header {
   display: block;
 }
 
-/* div azzurro */
+/*************** div azzurro ***************/
 .f-enn {
   display: flex;
   justify-content: space-between;
@@ -466,7 +484,7 @@ header {
   width: 30%;
 }
 
-/* domande frequenti */
+/*************** domande frequenti ***************/
 .appear {
   display: none;
 }
