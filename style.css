@@ -8,18 +8,24 @@ html {
   font-family: sans-serif;
 }
 
-header {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  z-index: 99;
+/*************************** common style ***************************/
+
+/*************** margin ***************/
+.marginauto {
+  margin: auto;
 }
 
 .margin-left {
   margin-left: 2rem;
 }
+.align-chevron {
+  margin-left: 30rem;
+}
 
-.margin-right {
+.margin-right05 {
+  margin-right: 0.5rem;
+}
+.margin-right2 {
   margin-right: 2rem;
 }
 
@@ -30,27 +36,25 @@ header {
 .margin-bot2 {
   margin-bottom: 2rem;
 }
-
 .margin-bot6 {
   margin-bottom: 6rem;
 }
 
+/*************** padding ***************/
 .padding {
   padding: 1rem;
-}
-
-.padding-top {
-  padding-top: 4rem;
 }
 
 .padding-top2 {
   padding-top: 2rem;
 }
-
-.padding-bot {
-  padding-bottom: 2rem;
+.padding-top4 {
+  padding-top: 4rem;
 }
 
+.padding-bot2 {
+  padding-bottom: 2rem;
+}
 .padding-bot4 {
   padding-bottom: 4rem;
 }
@@ -59,60 +63,23 @@ header {
   padding-left: 1rem;
 }
 
+/*************** align and spacing ***************/
 .align-right {
   justify-content: flex-end;
 }
 
-.align-chevron {
-  margin-left: 30rem;
+.linespacing {
+  line-height: 20px;
+}
+.l-height {
+  line-height: 2rem;
 }
 
-.hr-short {
-  margin: 1rem;
-  width: 20%;
+.relative {
+  position: relative;
 }
 
-.button1 {
-  background-color: #0061ff;
-  padding: 0.5rem 1rem;
-  color: white;
-  border: none;
-}
-
-.button2 {
-  background-color: #0061ff;
-  padding: 1rem;
-  color: white;
-  border: none;
-  width: 60%;
-  font-size: 14px;
-}
-
-.button3 {
-  background-color: #0061ff;
-  padding: 0.7rem 2rem;
-  color: white;
-  border: none;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-.button4 {
-  background-color: #0061ff;
-  padding: 0.7rem 1rem;
-  color: white;
-  border: none;
-  margin-bottom: 2rem;
-  width: 30%;
-  top: 3rem;
-  right: 1rem;
-  position: absolute;
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
-
+/*************** containers ***************/
 .container {
   width: 50%;
   margin: 0 auto;
@@ -123,6 +90,11 @@ header {
   width: 65%;
   margin: 0 auto;
   padding-top: 5rem;
+}
+
+/*************** fontsize ***************/
+.font-smaller {
+  font-size: 16px;
 }
 
 .font-small {
@@ -141,13 +113,80 @@ header {
   font-weight: 600;
 }
 
-header {
-  padding: 1rem;
-  min-height: 80px;
+/*************** colors ***************/
+.white {
+  color: white;
 }
 
-.relative {
-  position: relative;
+.sky {
+  background-color: #b4d0e7;
+}
+
+.gray {
+  color: #8b9497;
+}
+
+/*************** buttons ***************/
+button {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 2px 2px 5px gray;
+}
+
+.button1 {
+  background-color: #0061ff;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.button2 {
+  background-color: #0061ff;
+  padding: 1rem;
+  border: none;
+  width: 60%;
+  font-size: 14px;
+}
+
+.button3 {
+  background-color: #0061ff;
+  padding: 0.7rem 2rem;
+  border: none;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.button4 {
+  background-color: #0061ff;
+  padding: 0.7rem 1rem;
+  border: none;
+  margin-bottom: 2rem;
+  width: 30%;
+  top: 3rem;
+  right: 1rem;
+  position: absolute;
+}
+
+.button5 {
+  border: 1px black solid;
+  padding: 0.5rem 1rem;
+}
+
+.button6 {
+  background-color: white;
+  padding: 0.7rem 3rem;
+  border: none;
+}
+
+/*************************** header ***************************/
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 99;
+  padding: 1rem;
+  min-height: 80px;
 }
 
 .f-nav {
@@ -162,6 +201,15 @@ header {
   align-items: center;
 }
 
+.column-nav > p:hover {
+  border-bottom: solid 2px black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+
+/*************************** main ***************************/
+/* jumbo */
 .frontpage {
   min-height: 500px;
   background-color: #b4d0e7;
@@ -190,11 +238,17 @@ header {
   position: absolute;
 }
 
+.jumbolink {
+  color: black;
+}
+
+/* radio */
 .radio {
   margin: 1rem 1rem 1rem 0;
   display: inline-block;
 }
 
+/* flex triplo verticale */
 .f-triple {
   display: flex;
   flex-direction: row;
@@ -226,6 +280,17 @@ header {
   color: #aebcc5;
 }
 
+.icon-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.hr-short {
+  margin: 1rem;
+  width: 20%;
+}
+
+/* box large */
 .f-single {
   display: flex;
   flex-direction: row;
@@ -238,6 +303,7 @@ header {
   width: 100%;
 }
 
+/* partner */
 .f-display {
   display: flex;
   margin-top: 2rem;
@@ -256,20 +322,24 @@ header {
   padding: 2rem;
 }
 
-.team {
-  min-height: 500px;
-  background-color: #f5f5f5;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
+/* flex 6 colonne */
 .column-triple {
   width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
+
+/* quadrati */
+.quadrati {
+  min-height: 628px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
 .square {
   display: flex;
   flex-wrap: wrap;
@@ -279,20 +349,113 @@ header {
 .text {
   width: 33%;
   padding: 2rem;
+  display: none;
+  position: absolute;
+  left: calc(628px + 1rem);
+  top: 1rem;
 }
 
 .img-width {
   width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
+.loghi {
+  width: 50%;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+/* Background e animazioni quadrati */
+.verde {
+  background-color: #a2d39b;
+}
+.verde:active {
+  transform: scale(0.9);
+}
+.verde:hover > .text {
+  display: block;
+}
+
+.granata {
+  background-color: #61082b;
+}
+.granata:active {
+  transform: scale(0.9);
+}
+.granata:hover > .text {
+  display: block;
+}
+
+.azzurro {
+  background-color: #0093ce;
+}
+.azzurro:active {
+  transform: scale(0.9);
+}
+.azzurro:hover > .text {
+  display: block;
+}
+
+.rosso1 {
+  background-color: #ff1c1c;
+}
+.rosso1:active {
+  transform: scale(0.9);
+}
+.rosso1:hover > .text {
+  display: block;
+}
+
+.rosso2 {
+  background-color: #d5001f;
+}
+.rosso2:active {
+  transform: scale(0.9);
+}
+.rosso2:hover > .text {
+  display: block;
+}
+
+.celeste {
+  background-color: #b4d0e7;
+}
+.celeste:active {
+  transform: scale(0.9);
+}
+.celeste:hover > .text {
+  display: block;
+}
+
+.blu {
+  background-color: #0d2481;
+}
+.blu:active {
+  transform: scale(0.9);
+}
+.blu:hover > .text {
+  display: block;
+}
+
+.giallo {
+  background-color: #ffd830;
+}
+.giallo:active {
+  transform: scale(0.9);
+}
+.giallo:hover > .text {
+  display: block;
+}
+
+/* div azzurro */
 .f-enn {
   display: flex;
   justify-content: space-between;
   padding-bottom: 8rem;
-}
-
-.sky {
-  background-color: #b4d0e7;
 }
 
 .left-col {
@@ -303,6 +466,7 @@ header {
   width: 30%;
 }
 
+/* domande frequenti */
 .appear {
   display: none;
 }
@@ -311,13 +475,10 @@ header {
   display: block;
 }
 
+/*************************** footer ***************************/
 footer {
   background-color: #000000;
   min-height: 500px;
-}
-
-.white {
-  color: white;
 }
 
 .f-foot {
@@ -329,8 +490,4 @@ footer {
   width: 16%;
   display: flex;
   flex-direction: column;
-}
-
-.l-height {
-  line-height: 2rem;
 }
