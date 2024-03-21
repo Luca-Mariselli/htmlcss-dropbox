@@ -126,6 +126,10 @@ html {
   color: #8b9497;
 }
 
+.purple{
+  color: #61082b;
+}
+
 /*************** buttons ***************/
 button {
   cursor: pointer;
